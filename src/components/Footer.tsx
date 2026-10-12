@@ -1,4 +1,5 @@
 import { ArrowRight, ArrowUpRight, Instagram, MessageCircle, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
 import { admissionFormUrl } from '../data';
 
@@ -20,20 +21,20 @@ export function Footer() {
         {/* Explore links */}
         <div className="footer-column">
           <h3>Explore</h3>
-          {/* <a href="#programmes">Programmes</a> */}
-          <a href="#about-us">About us</a>
-          <a href="#curriculum">Our curriculum</a>
-          <a href="#facilities">Campus facilities</a>
-          <a href="#gallery">Gallery</a>
+          <Link to="/about-us">About us</Link>
+          <Link to="/programmes">Our programmes</Link>
+          <Link to="/facilities">Campus facilities</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/management">Management</Link>
         </div>
 
         {/* For families */}
         <div className="footer-column">
           <h3>For families</h3>
-          <a href="#about-us">Admissions</a>
-          <a href="#about-us">School tour</a>
-          <a href="#about-us">About our school</a>
-          <a href="#top">Talk to us</a>
+          <a href={admissionFormUrl} target="_blank" rel="noopener noreferrer">Admissions</a>
+          <a href="mailto:smartstartplayschool@alagappa.org">Contact us</a>
+          <Link to="/about-us">About our school</Link>
+          <a href="tel:8098533000">Talk to us</a>
         </div>
 
         {/* Newsletter - hidden

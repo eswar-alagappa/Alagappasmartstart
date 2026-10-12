@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { WhySection } from './WhySection';
@@ -54,6 +54,45 @@ function InfrastructureSection() {
     );
 }
 
+function AdministratorSection() {
+    return (
+        <section className="section management-section">
+            <div className="container">
+                <SectionHeading
+                    eyebrow="Smart Start Play School"
+                    title="From the Administrator"
+                    align="center"
+                />
+
+                <div className="management-list">
+                    <div className="management-card">
+                        <div className="management-photo-wrap">
+                            <img
+                                src={asset('images/Administrator.jpg')}
+                                alt="Mrs. P. VIDHYALAKSHMI"
+                                className="management-photo"
+                            />
+                        </div>
+
+                        <div className="management-info">
+                            <h3 className="management-name">Mrs. P. VIDHYALAKSHMI</h3>
+                            <p className="management-role">Administrator</p>
+                            <p className="management-role">B.A., LL.M, PGDHRM, M.A (CC.E), M.Sc. Psychology (Specialization in Child Psychology)</p>
+                            <div className="management-bio">
+                                <p>Childhood is not just a phase of growing; it is a magical season of becoming. Every smile, every question, every tiny step forward carries within it the promise of a brighter tomorrow. As a play school Administrator, I feel deeply blessed to witness these precious beginnings — where curiosity blossoms, confidence takes root and innocence paints the world with wonder.</p>
+                                <p>Our Smart Start Play School is more than a place of learning; it is a nurturing space where children feel safe to explore, express, and evolve. We believe that early childhood is the foundation upon which lifelong learning and emotional resilience are built. Through play, discovery, and meaningful relationships, we gently guide each child to develop not only academically but socially, emotionally, and creatively.</p>
+                                <p>Each day, I watch children transform simple moments into extraordinary experiences — turning imagination into stories, friendships into lifelong lessons, and challenges into opportunities for growth. Their laughter reminds us that learning is joyful, and their questions inspire us to keep nurturing curiosity with patience and love.</p>
+                                <p>We strongly believe that education is a partnership between school and family. When parents, teachers, and caregivers walk together with shared values and trust, children flourish in remarkable ways. Together, we create an environment where every child feels seen, heard, and celebrated for who they are.</p>
+                                <p>As we continue this beautiful journey, our commitment remains unwavering — to provide a holistic, child-centered environment that respects individuality, encourages exploration, and builds strong emotional foundations. Because in every little hand we hold today lies the future we shape tomorrow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
+
 export function AboutUsPage() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -79,6 +118,7 @@ export function AboutUsPage() {
             <main style={{ paddingBottom: '64px' }}>
                 <WhySection />
                 <InfrastructureSection />
+                <AdministratorSection />
             </main>
             <Footer />
         </div>

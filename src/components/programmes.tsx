@@ -1,12 +1,8 @@
-import { FormEvent, useEffect, useState } from 'react';
-import { createClient } from '@supabase/supabase-js';
 import {
-    ArrowUpRight,
+    Sparkles,
     Baby,
     BookOpen,
-    Sparkles,
     Star,
-
 } from 'lucide-react';
 const programmes = [
     { age: '8 Months – 2.5 years', name: 'Day Care', description: 'A gentle first step into group play, discovery and little routines that build confidence.', color: 'red', icon: Baby },
@@ -27,18 +23,46 @@ function SectionHeading({ eyebrow, title, text, align = 'left' }: { eyebrow: str
 }
 
 function Programmes() {
-    const [enquiryOpen, setEnquiryOpen] = useState(false);
-    const [submitted, setSubmitted] = useState(false);
-    const [formError, setFormError] = useState('');
-    const openEnquiry = () => {
-        setSubmitted(false);
-        setFormError('');
-        setEnquiryOpen(true);
-    };
-
     return (
-        <div >
-            <section id="programmes" className="section programmes-section"><div className="container"><SectionHeading eyebrow="Find their happy place" title="A programme for every little leap" text="From first friendships to big-school confidence, our programmes meet children exactly where they are." /><div className="programme-grid">{programmes.map(({ age, name, description, color, icon: Icon }) => <article className={`programme-card card-${color}`} key={name}><div className="card-top"><span className="age-label">{age}</span><span className={`round-icon ${color}-bg`}><Icon size={22} /></span></div><h3>{name}</h3><p>{description}</p><span className="card-number">0{programmes.findIndex((item) => item.name === name) + 1}</span></article>)}</div></div></section>
+        <div>
+            <section id="programmes" className="section programmes-section">
+                <div className="container">
+                    <div className="programmes-hero">
+                        <div className="programmes-hero-text">
+                            <SectionHeading
+                                eyebrow="Find their happy place"
+                                title="A programme for every little leap"
+                                text="From first friendships to big-school confidence, our programmes meet children exactly where they are."
+                            />
+                        </div>
+                        <div className="programmes-hero-image">
+                            <img
+                                src="images/classroom-hero.jpg"
+                                alt="Children learning in a colourful Smart Start classroom"
+                                className="programmes-hero-img"
+                                onError={(e) => {
+                                    // fallback to existing classroom image if new one not yet added
+                                    (e.target as HTMLImageElement).src = 'images/facilities/kindergarten-classroom1.png';
+                                }}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="programme-grid">
+                        {programmes.map(({ age, name, description, color, icon: Icon }) => (
+                            <article className={`programme-card card-${color}`} key={name}>
+                                <div className="card-top">
+                                    <span className="age-label">{age}</span>
+                                    <span className={`round-icon ${color}-bg`}><Icon size={22} /></span>
+                                </div>
+                                <h3>{name}</h3>
+                                <p>{description}</p>
+                                <span className="card-number">0{programmes.findIndex((item) => item.name === name) + 1}</span>
+                            </article>
+                        ))}
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
