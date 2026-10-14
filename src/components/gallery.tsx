@@ -56,7 +56,7 @@ function Gallery() {
                         <span className="eyebrow eyebrow-light">
                             <Sparkles size={14} /> Days worth remembering
                         </span>
-                        <h2>There is magic<br />in the everyday</h2>
+                        <h2>There is magic<br />everyday</h2>
                         <p>Messy hands, Brave tries, Loud laughter. These are the moments that make childhood.</p>
                     </div>
 
