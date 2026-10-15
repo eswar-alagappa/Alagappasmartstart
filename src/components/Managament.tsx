@@ -22,26 +22,26 @@ const leaders = [
             "To date, she has successfully represented 65 clients. From her early age, Ms. Devi Alamelu Vairavan has been passionate about education and has actively contributed to the growth of the Alagappa Group of Educational Institutions. Her mission in life is to follow the footsteps of her father – Dr. Ramanathan Vairavan, her grandmother – Dr. Mrs. Umayal Ramanathan and her great-grandfather – Dr. R.M. Alagappa Chettiar by continuing to give back to society and broaden the spectrum of education offered to our community with emphasis on achieving excellence and offering opportunities for immediate employment.",
         ],
     },
-    {
-        photo: asset('images/dr_alagappachettiar.jpeg'),
-        name: 'Padma Bhushan Dr. R.M. ALAGAPPACHETTIAR',
-        role: 'M.A., D.Lit. BAR–AT–LAW, London\nFounder: Dr. Alagappa Chettiar Educational Trust & Asoka Charitable Trust',
-        bio: [
-            '"My happiness is limitless because it does not consist naturally in my own happiness, but my happiness consists in the happiness of the thousands of students, young and old, boy and girl that received education in our vast campus." — Quote from the last speech of our founder of Dr. R.M. Alagappa Chettiar Educational Trust, March 1957.',
-            "Dr. R.M. Alagappa Chettiar was a visionary who harbored a firm conviction that education is an absolute must for a human being to become productive, wholesome, and humane. When India became independent, he answered the call of the Prime Minister to help educate India by spontaneously offering to set up an Arts College in Karaikudi. His munificent donations led to the inception of a string of educational institutions, which formed the basis for the establishment of the Alagappa University in 1985 by the Government of Tamil Nadu.",
-            "The magnificent gift of 300 acres of land and fifteen lakhs of Rupees donated by Dr. R.M. Alagappa Chettiar facilitated the Government of India to select Karaikudi as the seat of Central Electrochemical Research Institute (CECRI). Within a span of two decades, he demonstrated his versatility as a successful business tycoon, an intrepid academician with a vision to revolutionize his native town single-handedly and change the course of history by transforming a mere scrub jungle into an abode of educational institutions.",
-        ],
-    },
-    {
-        photo: asset('images/umayalAachi.jpg'),
-        name: 'Late Dr. Mrs. UMAYAL RAMANATHAN',
-        role: 'Secretary Emeritus Trustee, Asoka Charitable Trust',
-        bio: [
-            "Dr. (Mrs.) Umayal Ramanathan, the daughter of Dr. R.M. Alagappa Chettiar, is the founder of the Alagappa Matriculation Higher Secondary School in Karaikudi and Chennai. Subsequently, she also launched the Umayal Play School and the Day Care Center. She founded Dr. Umayal Ramanathan College for Women in 2006 and has actively worked to expand the infrastructure as well as the academic programmes and to provide vocational training to enable women in the community to prosper.",
-            "She serves as a Syndicate Member of the Alagappa University and as the Managing Trustee of the Dr. Alagappa Chettiar Educational Trust and the Asoka Charitable Trust. She has been an active member of the Social Welfare Board of Ramnad District and the Chairperson of Gangadeeswarar Temple, Chennai.",
-            "Dr. (Mrs.) Umayal Ramanathan was awarded the Doctor of Letters Honoris causa by the Honourable Governor of Tamil Nadu. In recognition of her outstanding services to society, Dr. Mrs. Umayal Ramanathan was awarded the prestigious Indira Gandhi Priyadarshini Award for National Integration and National Unity. She was also honoured with a Doctorate Degree by the University of Madras on its 150th Convocation by His Excellency, the Governor of Tamil Nadu.",
-        ],
-    },
+    /*{
+            photo: asset('images/dr_alagappachettiar.jpeg'),
+            name: 'Padma Bhushan Dr. R.M. ALAGAPPACHETTIAR',
+            role: 'M.A., D.Lit. BAR–AT–LAW, London\nFounder: Dr. Alagappa Chettiar Educational Trust & Asoka Charitable Trust',
+            bio: [
+                '"My happiness is limitless because it does not consist naturally in my own happiness, but my happiness consists in the happiness of the thousands of students, young and old, boy and girl that received education in our vast campus." — Quote from the last speech of our founder of Dr. R.M. Alagappa Chettiar Educational Trust, March 1957.',
+                "Dr. R.M. Alagappa Chettiar was a visionary who harbored a firm conviction that education is an absolute must for a human being to become productive, wholesome, and humane. When India became independent, he answered the call of the Prime Minister to help educate India by spontaneously offering to set up an Arts College in Karaikudi. His munificent donations led to the inception of a string of educational institutions, which formed the basis for the establishment of the Alagappa University in 1985 by the Government of Tamil Nadu.",
+                "The magnificent gift of 300 acres of land and fifteen lakhs of Rupees donated by Dr. R.M. Alagappa Chettiar facilitated the Government of India to select Karaikudi as the seat of Central Electrochemical Research Institute (CECRI). Within a span of two decades, he demonstrated his versatility as a successful business tycoon, an intrepid academician with a vision to revolutionize his native town single-handedly and change the course of history by transforming a mere scrub jungle into an abode of educational institutions.",
+            ],
+        },
+        {
+            photo: asset('images/umayalAachi.jpg'),
+            name: 'Late Dr. Mrs. UMAYAL RAMANATHAN',
+            role: 'Secretary Emeritus Trustee, Asoka Charitable Trust',
+            bio: [
+                "Dr. (Mrs.) Umayal Ramanathan, the daughter of Dr. R.M. Alagappa Chettiar, is the founder of the Alagappa Matriculation Higher Secondary School in Karaikudi and Chennai. Subsequently, she also launched the Umayal Play School and the Day Care Center. She founded Dr. Umayal Ramanathan College for Women in 2006 and has actively worked to expand the infrastructure as well as the academic programmes and to provide vocational training to enable women in the community to prosper.",
+                "She serves as a Syndicate Member of the Alagappa University and as the Managing Trustee of the Dr. Alagappa Chettiar Educational Trust and the Asoka Charitable Trust. She has been an active member of the Social Welfare Board of Ramnad District and the Chairperson of Gangadeeswarar Temple, Chennai.",
+                "Dr. (Mrs.) Umayal Ramanathan was awarded the Doctor of Letters Honoris causa by the Honourable Governor of Tamil Nadu. In recognition of her outstanding services to society, Dr. Mrs. Umayal Ramanathan was awarded the prestigious Indira Gandhi Priyadarshini Award for National Integration and National Unity. She was also honoured with a Doctorate Degree by the University of Madras on its 150th Convocation by His Excellency, the Governor of Tamil Nadu.",
+            ],
+        },*/
 
 ];
 
